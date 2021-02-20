@@ -1,45 +1,101 @@
 import styled from 'styled-components';
 
-import ImageBanner from '../../assets/ImageBanner4.jpeg';
+import ImgContent from '../../assets/ImageContent.jpg';
 
 export const Container = styled.div``;
 
-export const Banner = styled.div`
-  display: flex;
-  flex: 1;
-  background: #000;
-  height: 370px;
-`;
+export const Content = styled.div`
+  position: relative;
+  max-width: 1150px;
+  /* height: 130vh; */
+  background: transparent;
+  margin: 120px auto;
 
-export const BannerImage = styled.div`
-  width: 50%;
-  height: 100%;
-  background: url(${ImageBanner}) no-repeat center;
-  background-size: cover;
-`;
-
-export const BannerContent = styled.div`
-  width: 50%;
-  height: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  padding: 80px 240px 80px 80px;
-  background: #d98e83;
-  color: #fff;
+  h2 {
+    color: #d98e83;
+    font-size: 20px;
+  }
+  strong {
+    font-size: 15px;
+    color: #464446;
+    margin: 20px 0;
+  }
 
-  h3 {
-    font-size: 45px;
-    font-weight: 100;
-    line-height: 40px;
+  section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
 
-    strong {
-      font-size: 50px;
+    div {
+      width: 100%;
     }
   }
-  p {
-    font-size: 18px;
-    margin-top: 16px;
-    font-weight: bold;
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  right: 0;
+  top: -120px;
+  position: absolute;
+`;
+
+export const ImageContent = styled.div`
+  width: 50%;
+  margin-left: 20px;
+  background: url(${ImgContent}) no-repeat center;
+  background-size: cover;
+
+  div {
+    width: 100%;
+    padding: 15px;
+    background: #d98e83;
+    align-items: center;
+    opacity: 0.8;
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 100;
+      color: #fff;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      strong {
+        font-size: 20px;
+        color: #fff;
+      }
+
+      svg {
+        margin-left: 4px;
+      }
+    }
   }
+`;
+
+export const MoreInfo = styled.div`
+  padding: 10px;
+  width: 100%;
+  background: #d98e83;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+
+  a {
+    font-size: 16px;
+    color: #fff;
+  }
+`;
+
+export const Underline = styled.div`
+  width: 100%;
+  height: 1.8px;
+  background: #d98e83;
+  margin-top: 20px;
 `;

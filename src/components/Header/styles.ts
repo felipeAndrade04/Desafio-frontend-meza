@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 
 export const Header = styled.div`
-  padding: 16px 0;
+  position: fixed;
+  top: 0;
+  z-index: 1020;
+  width: 100%;
+  padding: 12px 0;
   background: #143c8d;
 `;
 
 export const HeaderContent = styled.div`
-  max-width: 1580px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -15,33 +19,31 @@ export const HeaderContent = styled.div`
   div:first-child {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     img {
-      height: 40px;
+      height: 35px;
     }
 
     a {
       text-decoration: none;
       color: #fff;
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 500;
-
-      display: flex;
-      align-items: center;
 
       &:hover {
         opacity: 0.8;
       }
 
       svg {
-        margin: 0 8px 0 32px;
+        margin: 0 8px 0 24px;
       }
     }
   }
 
   label {
-    height: 48px;
-    width: 700px;
+    height: 40px;
+    width: 600px;
     padding: 16px;
     background: #fff;
     border-radius: 4px;
@@ -51,8 +53,9 @@ export const HeaderContent = styled.div`
 
     input {
       flex: 1;
-      font-size: 20px;
-      color: #909090;
+      font-size: 16px;
+      color: #a8a8a8;
+      font-weight: 100;
       background: transparent;
       border: 0;
     }
@@ -60,11 +63,11 @@ export const HeaderContent = styled.div`
 
   div {
     display: flex;
-    align-items: center;
+
     a {
       text-decoration: none;
       color: #fff;
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 500;
 
       display: flex;
@@ -74,11 +77,9 @@ export const HeaderContent = styled.div`
       &:hover {
         opacity: 0.8;
       }
-      svg {
-        margin: 8px;
-      }
+
       p {
-        margin-right: 32px;
+        margin: 0 32px 0 8px;
       }
     }
   }
