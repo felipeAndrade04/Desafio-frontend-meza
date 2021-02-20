@@ -11,6 +11,7 @@
 ## :rocket: Tecnologias
 
 -  [ReactJS](https://reactjs.org/)
+-  [Typescript](https://www.typescriptlang.org/)
 -  [styled-components](https://www.styled-components.com/)
 -  [React-Icons](https://react-icons.netlify.com/)
 -  [VS Code][vc] com [EditorConfig][vceditconfig] e [ESLint][vceslint]
